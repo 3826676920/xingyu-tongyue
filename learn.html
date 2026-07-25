@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="星语童阅点句学语，绘本文字、画面与2021版国家通用手语视频同步伴读。" />
+    <title>点句学语｜星语童阅</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script type="module" crossorigin src="/assets/site-Ch27ROBF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/site-CM-iot2z.css">
+  </head>
+  <body>
+    <div data-site-header></div>
+    <main id="main-content" class="site-main">
+      <section class="page-hero subpage-hero" aria-labelledby="learn-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="project-fullname">特殊教育视域下原创手语绘本创编及数字化服务平台（星语童阅）</p>
+            <h1 id="learn-title">点句学语｜国家通用手语同步伴读</h1>
+            <p class="hero-lead">一句一点读，手语同步学，让3-8岁听障儿童跟着文字、画面与标准手语同步启蒙，支持特教早期语言干预和家庭陪读。</p>
+          </div>
+          <div class="hero-media">
+            <img src="/assets/learn-reference-D1E8NDyF.jpg" alt="点句学语绘本与国家通用手语视频同步展示" />
+            <span class="media-badge">文字 · 画面 · 手语三轨同步</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 点句学语核心功能区 -->
+      <section id="reader" class="section" aria-labelledby="reader-title">
+        <div class="container">
+          <div class="section-heading align-left">
+            <p class="eyebrow">核心功能体验</p>
+            <h2 id="reader-title">《小熊的手语好朋友》互动伴读</h2>
+            <p>点击左侧任意句子，右侧视频与下方手语拆解将同步切换。</p>
+          </div>
+          <div class="learn-shell">
+            <article class="card reader-panel card-rise">
+              <div class="reader-art book-cover cover-2">
+                <img class="reference-crop" src="/assets/books-reference-XwPrbm0M.jpg" alt="小熊在森林里用小手与朋友交流的绘本画面" />
+                <div class="reader-copy">
+                  <ul class="sentence-list" aria-label="可点读绘本句子">
+                    <li><button class="sentence-button" type="button" data-sentence="森林里住着一只可爱的小熊。" data-word="森林、小熊" data-position="双手位于胸前与身体两侧" data-palm="掌心自然向前，手指放松" data-movement="先表现森林空间，再以双手勾勒小熊形象" data-time="0">森林里住着一只可爱的小熊。</button></li>
+                    <li><button class="sentence-button" type="button" data-sentence="小熊喜欢用小手交朋友。" data-word="喜欢、朋友" data-position="双手由胸口向前移动" data-palm="掌心相对，指尖自然弯曲" data-movement="先表达喜欢，再将双手相扣表现朋友" data-time="1">小熊喜欢用小手交朋友。</button></li>
+                    <li><button class="sentence-button" type="button" data-sentence="我们一起玩耍，一起欢笑。" data-word="一起、玩耍" data-position="双手保持在胸前可视区域" data-palm="掌心相对并随动作翻转" data-movement="双手同步移动，强调共同参与" data-time="2">我们一起玩耍，一起欢笑。</button></li>
+                    <li><button class="sentence-button" type="button" data-sentence="不用大声说话，也懂彼此。" data-word="懂、彼此" data-position="食指由额侧移向双方" data-palm="掌心向内，再转向交流对象" data-movement="先点额头表示理解，再指向双方" data-time="3">不用大声说话，也懂彼此。</button></li>
+                    <li><button class="sentence-button" type="button" data-sentence="小手相连，就是大声说话。" data-word="小手、相连" data-position="双手在胸前中央连接" data-palm="掌心相对，手指自然相触" data-movement="双手由两侧靠近并稳定连接" data-time="4">小手相连，就是大声说话。</button></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="card player-panel card-rise">
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <div><p class="eyebrow">标准手语演示</p><h3 class="text-2xl font-black">当前句：<span data-current-sentence></span></h3></div>
+                <span class="team-role">2021版国家通用手语</span>
+              </div>
+              <div class="video-stage">
+                <video id="learn-video" controls preload="metadata" poster="/assets/learn-reference-D1E8NDyF.jpg">
+                  <source src="/assets/sign-demo-DS_djCpZ.mp4" type="video/mp4" />
+                  您的浏览器暂不支持视频播放。
+                </video>
+              </div>
+              <div class="player-controls" aria-label="点句学语播放控制">
+                <button class="btn btn-primary" type="button" data-learn-play><i class="fa-solid fa-play" aria-hidden="true"></i>播放 / 暂停</button>
+                <button class="btn btn-ghost active" type="button" data-learn-speed="1">常速</button>
+                <button class="btn btn-ghost" type="button" data-learn-speed="0.65">慢速</button>
+                <button class="btn btn-ghost" type="button" data-learn-loop aria-pressed="false"><i class="fa-solid fa-repeat" aria-hidden="true"></i>单句循环</button>
+                <button class="btn btn-icon" type="button" data-learn-prev aria-label="上一句"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="btn btn-icon" type="button" data-learn-next aria-label="下一句"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+              </div>
+              <div class="player-status"><span data-sentence-position>第 1 / 5 句</span><span>点句数字化伴读</span></div>
+              <div class="progress-track" aria-label="句子学习进度"><span data-sentence-progress></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 逐句手语动作拆解 -->
+      <section class="section section-band" aria-labelledby="breakdown-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">逐句手语拆解</p>
+            <h2 id="breakdown-title">从词汇到动作，降低跟学门槛</h2>
+          </div>
+          <div class="sign-breakdown">
+            <article class="card breakdown-card card-rise"><strong>当前手语词汇</strong><span data-sign-word>森林、小熊</span></article>
+            <article class="card breakdown-card card-rise"><strong>手部位置</strong><span data-sign-position>双手位于胸前与身体两侧</span></article>
+            <article class="card breakdown-card card-rise"><strong>掌心方向</strong><span data-sign-palm>掌心自然向前</span></article>
+            <article class="card breakdown-card card-rise"><strong>动作步骤</strong><span data-sign-movement>先表现森林空间，再勾勒小熊形象</span></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 家长和教师配套 -->
+      <section class="section" aria-labelledby="guide-title">
+        <div class="container">
+          <div class="section-heading"><p class="eyebrow">陪读与教学支持</p><h2 id="guide-title">同一套资源，连接家庭与课堂</h2></div>
+          <div class="two-grid">
+            <article class="card lift-card card-rise access-panel">
+              <span class="icon-box yellow"><i class="fa-solid fa-house-chimney-user" aria-hidden="true"></i></span>
+              <div><h3>家长陪读指南</h3><p>先看图理解情境，再点句观看手语，最后邀请孩子独立表达；每次10-15分钟，以积极回应替代纠错压力。</p><button class="btn btn-yellow" type="button" data-video-open data-video-title="家庭陪读示范">观看陪读示范</button></div>
+            </article>
+            <article class="card lift-card card-rise access-panel">
+              <span class="icon-box teal"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></span>
+              <div><h3>特教老师课堂教程</h3><p>可按“情境导入—逐句点读—动作拆解—角色练习—学习反馈”组织15-25分钟小组课堂。</p><a class="btn btn-ghost" href="./institution.html">进入教学后台</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm section-band" aria-labelledby="learn-flow-title">
+        <div class="container">
+          <div class="section-heading"><p class="eyebrow">业务闭环</p><h2 id="learn-flow-title">让标准化手语内容真正进入学习现场</h2></div>
+          <div class="flow-strip card-rise">
+            <div class="flow-step"><small>01</small><strong>原创绘本创编</strong></div>
+            <div class="flow-step"><small>02</small><strong>专家审校录制</strong></div>
+            <div class="flow-step"><small>03</small><strong>逐句同步伴读</strong></div>
+            <div class="flow-step"><small>04</small><strong>机构课堂使用</strong></div>
+            <div class="flow-step"><small>05</small><strong>公益家庭开放</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+  </body>
+</html>
