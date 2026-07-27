@@ -3,10 +3,10 @@
         <header class="site-header">
           <nav class="site-nav container" aria-label="主导航">
             <a class="brand" href="./index.html" aria-label="星语童阅首页">
-              <span class="brand-mark" aria-hidden="true"><span></span></span>
-              <span class="brand-name">星语童阅</span>
+              <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+              <span class="brand-lockup"><span class="brand-name">星语童阅</span><small>原创手语绘本</small></span>
             </a>
-            <div class="desktop-nav">${i()}</div>
+            <div class="desktop-nav">${i()}<a class="nav-cta" href="./books.html">选绘本 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
             <button class="btn-icon menu-toggle" type="button" aria-label="打开导航菜单" aria-controls="mobile-navigation" aria-expanded="false">
               <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
@@ -19,10 +19,10 @@
           <div class="footer-main container">
             <div class="footer-brand">
               <a class="brand" href="./index.html">
-                <span class="brand-mark" aria-hidden="true"><span></span></span>
-                <span class="brand-name">星语童阅</span>
+                <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+                <span class="brand-lockup"><span class="brand-name">星语童阅</span><small>原创手语绘本</small></span>
               </a>
-              <p>面向3-8岁听障儿童的原创手语绘本品牌，以纸质绘本、数字伴读会员和机构内容授权形成可持续经营。</p>
+              <p>为3-8岁听障儿童创作适龄故事，让绘本、文字与国家通用手语在同一次阅读里相遇。</p>
             </div>
             <div class="footer-col">
               <h2>产品与服务</h2>
@@ -31,7 +31,7 @@
               <a href="./institution.html">机构内容授权</a>
             </div>
             <div class="footer-col">
-              <h2>商业规划</h2>
+              <h2>品牌与经营</h2>
               <a href="./public.html#research">市场调研</a>
               <a href="./public.html#revenue">收入模型</a>
               <a href="./public.html#growth">获客与增长</a>
@@ -43,7 +43,7 @@
               <a href="./about.html#contact">出版、授权与商务合作</a>
             </div>
           </div>
-          <div class="footer-bottom container">© 2026 星语童阅 · 原创手语绘本与数字伴读品牌</div>
+          <div class="footer-bottom container"><span>© 2026 星语童阅 · 原创手语绘本品牌</span><span>把故事读到指尖</span></div>
         </footer>`),document.body.insertAdjacentHTML(`beforeend`,`<div class="video-modal" id="global-video-modal" role="dialog" aria-modal="true" aria-labelledby="modal-video-title" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-head">
