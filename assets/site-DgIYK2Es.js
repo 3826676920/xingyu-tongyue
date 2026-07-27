@@ -1,0 +1,73 @@
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`/assets/learn-reference-D1E8NDyF.jpg`,t=`/assets/sign-demo-DS_djCpZ.mp4`;(()=>{let n=(()=>{let e=window.location.pathname.split(`/`).pop()||`index.html`;return e===``?`index.html`:e})(),r=[[`index.html`,`首页`],[`books.html`,`手语绘本库`],[`learn.html`,`点句学语`],[`institution.html`,`机构授权`],[`public.html`,`市场与运营`],[`about.html`,`关于我们`]],i=(e=!1)=>r.map(([t,r])=>{let i=n===t;return`<a class="${e?i?`active`:``:`nav-link${i?` active`:``}`}" href="./${t}"${i?` aria-current="page"`:``}>${r}</a>`}).join(``);function a(){let n=document.querySelector(`[data-site-header]`),r=document.querySelector(`[data-site-footer]`);n&&(n.innerHTML=`
+        <a class="skip-link" href="#main-content">跳到主要内容</a>
+        <header class="site-header">
+          <nav class="site-nav container" aria-label="主导航">
+            <a class="brand" href="./index.html" aria-label="星语童阅首页">
+              <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+              <span class="brand-lockup"><span class="brand-name">星语童阅</span><small>原创手语绘本</small></span>
+            </a>
+            <div class="desktop-nav">${i()}<a class="nav-cta" href="./books.html">选绘本 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+            <button class="btn-icon menu-toggle" type="button" aria-label="打开导航菜单" aria-controls="mobile-navigation" aria-expanded="false">
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+          </nav>
+          <nav id="mobile-navigation" class="mobile-nav" aria-label="移动端导航">
+            ${i(!0)}
+          </nav>
+        </header>`),r&&(r.innerHTML=`
+        <footer class="site-footer">
+          <div class="footer-main container">
+            <div class="footer-brand">
+              <a class="brand" href="./index.html">
+                <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+                <span class="brand-lockup"><span class="brand-name">星语童阅</span><small>原创手语绘本</small></span>
+              </a>
+              <p>为3-8岁听障儿童创作适龄故事，让绘本、文字与国家通用手语在同一次阅读里相遇。</p>
+            </div>
+            <div class="footer-col">
+              <h2>产品与服务</h2>
+              <a href="./books.html">原创分级绘本</a>
+              <a href="./learn.html">数字伴读会员</a>
+              <a href="./institution.html">机构内容授权</a>
+            </div>
+            <div class="footer-col">
+              <h2>品牌与经营</h2>
+              <a href="./public.html#research">市场调研</a>
+              <a href="./public.html#revenue">收入模型</a>
+              <a href="./public.html#growth">获客与增长</a>
+            </div>
+            <div class="footer-col">
+              <h2>联系我们</h2>
+              <span><i class="fa-regular fa-envelope" aria-hidden="true"></i> 3826676920@qq.com</span>
+              <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 吉林师范大学创新创业项目</span>
+              <a href="./about.html#contact">出版、授权与商务合作</a>
+            </div>
+          </div>
+          <div class="footer-bottom container"><span>© 2026 星语童阅 · 原创手语绘本品牌</span><span>把故事读到指尖</span></div>
+        </footer>`),document.body.insertAdjacentHTML(`beforeend`,`<div class="video-modal" id="global-video-modal" role="dialog" aria-modal="true" aria-labelledby="modal-video-title" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-head">
+            <div>
+              <small class="eyebrow">2021版国家通用手语标准化演示</small>
+              <h2 id="modal-video-title">手语视频伴读</h2>
+            </div>
+            <button class="btn-icon" type="button" data-modal-close aria-label="关闭手语视频弹窗">
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+          </div>
+          <video class="modal-video" id="modal-video" controls preload="metadata" poster="${e}">
+            <source src="${t}" type="video/mp4">
+            您的浏览器暂不支持视频播放。
+          </video>
+          <div class="modal-foot">
+            <div class="modal-controls">
+              <button class="btn btn-primary" type="button" data-modal-play><i class="fa-solid fa-play" aria-hidden="true"></i> 播放 / 暂停</button>
+              <button class="btn btn-ghost active" type="button" data-modal-speed="1">常速</button>
+              <button class="btn btn-ghost" type="button" data-modal-speed="0.65">慢速</button>
+              <button class="btn btn-ghost" type="button" data-modal-loop aria-pressed="false"><i class="fa-solid fa-repeat" aria-hidden="true"></i> 单句循环</button>
+            </div>
+            <span id="modal-video-status" aria-live="polite">常速播放 · 循环关闭</span>
+          </div>
+        </div>
+      </div>
+      <div class="toast" id="site-toast" role="status" aria-live="polite"></div>`)}function o(){let e=document.querySelector(`.menu-toggle`),t=document.querySelector(`.mobile-nav`);if(!e||!t)return;let n=n=>{t.classList.toggle(`open`,n),e.setAttribute(`aria-expanded`,String(n)),e.setAttribute(`aria-label`,n?`关闭导航菜单`:`打开导航菜单`),e.querySelector(`i`).className=n?`fa-solid fa-xmark`:`fa-solid fa-bars`};e.addEventListener(`click`,()=>n(!t.classList.contains(`open`))),t.querySelectorAll(`a`).forEach(e=>e.addEventListener(`click`,()=>n(!1))),window.addEventListener(`resize`,()=>{window.innerWidth>=1180&&n(!1)})}function s(){let e=document.querySelectorAll(`.card-rise`);if(!e.length)return;if(!(`IntersectionObserver`in window)){e.forEach(e=>e.classList.add(`is-visible`));return}let t=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(e.target.classList.add(`is-visible`),t.unobserve(e.target))})},{threshold:.12});e.forEach((e,n)=>{e.style.transitionDelay=`${Math.min(n%6,4)*65}ms`,t.observe(e)})}function c(){let e=document.querySelectorAll(`[data-count]`);if(!e.length)return;let t=e=>{let t=Number(e.dataset.count||0),n=e.dataset.suffix||``,r=performance.now(),i=a=>{let o=Math.min((a-r)/1350,1),s=1-(1-o)**3;e.textContent=`${Math.round(t*s)}${n}`,o<1&&requestAnimationFrame(i)};requestAnimationFrame(i)},n=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(t(e.target),n.unobserve(e.target))})},{threshold:.5});e.forEach(e=>n.observe(e))}function l(){let e=document.querySelector(`#global-video-modal`),t=document.querySelector(`#modal-video`);if(!e||!t)return;let n=document.querySelector(`#modal-video-title`),r=document.querySelector(`#modal-video-status`),i=document.querySelectorAll(`[data-video-open]`),a=null,o=()=>{let e=t.playbackRate===1?`常速`:`慢速`;r.textContent=`${e}播放 · 循环${t.loop?`开启`:`关闭`}`},s=()=>{t.pause(),e.classList.remove(`open`),e.setAttribute(`aria-hidden`,`true`),document.body.classList.remove(`modal-open`),a?.focus()};i.forEach(r=>{r.addEventListener(`click`,()=>{a=r,n.textContent=r.dataset.videoTitle||`手语视频伴读`;let i=t.querySelector(`source`),s=r.dataset.videoSrc||`/assets/sign-demo-DS_djCpZ.mp4`;i.getAttribute(`src`)!==s&&(i.setAttribute(`src`,s),t.load()),t.playbackRate=1,t.loop=!1,e.classList.add(`open`),e.setAttribute(`aria-hidden`,`false`),document.body.classList.add(`modal-open`),e.querySelector(`[data-modal-close]`).focus(),o()})}),e.querySelector(`[data-modal-close]`).addEventListener(`click`,s),e.addEventListener(`click`,t=>{t.target===e&&s()}),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&e.classList.contains(`open`)&&s()}),e.querySelector(`[data-modal-play]`).addEventListener(`click`,()=>{t.paused?t.play().catch(()=>{}):t.pause()}),e.querySelectorAll(`[data-modal-speed]`).forEach(n=>{n.addEventListener(`click`,()=>{t.playbackRate=Number(n.dataset.modalSpeed),e.querySelectorAll(`[data-modal-speed]`).forEach(e=>e.classList.toggle(`active`,e===n)),o()})}),e.querySelector(`[data-modal-loop]`).addEventListener(`click`,e=>{t.loop=!t.loop,e.currentTarget.classList.toggle(`active`,t.loop),e.currentTarget.setAttribute(`aria-pressed`,String(t.loop)),o()})}function u(){let e=[...document.querySelectorAll(`[data-book-filter]`)],t=[...document.querySelectorAll(`[data-book-card]`)],n=document.querySelector(`[data-book-count]`);!e.length||!t.length||e.forEach(r=>{r.addEventListener(`click`,()=>{let i=r.dataset.bookFilter;e.forEach(e=>{let t=e===r;e.classList.toggle(`active`,t),e.setAttribute(`aria-pressed`,String(t))});let a=0;t.forEach(e=>{let t=`${e.dataset.age} ${e.dataset.topic}`,n=i===`all`||t.includes(i);e.hidden=!n,n&&(a+=1)}),n&&(n.textContent=`当前显示 ${a} 本`)})})}function d(){let e=document.querySelector(`#learn-video`),t=[...document.querySelectorAll(`[data-sentence]`)];if(!e||!t.length)return;let n=[...document.querySelectorAll(`[data-book-page-panel]`)],r=[...document.querySelectorAll(`[data-book-page]`)],i=document.querySelector(`[data-book-page-label]`),a=document.querySelector(`[data-current-sentence]`),o=document.querySelector(`[data-sign-word]`),s=document.querySelector(`[data-sign-position]`),c=document.querySelector(`[data-sign-palm]`),l=document.querySelector(`[data-sign-movement]`),u=document.querySelector(`[data-sentence-progress]`),d=document.querySelector(`[data-sentence-position]`),f=0,p=p=>{f=(p+t.length)%t.length,t.forEach((e,t)=>{e.classList.toggle(`active`,t===f)}),n.forEach((e,t)=>{let n=t===f;e.classList.toggle(`active`,n),e.hidden=!n}),r.forEach((e,t)=>{let n=t===f;e.classList.toggle(`active`,n),n?e.setAttribute(`aria-current`,`page`):e.removeAttribute(`aria-current`)});let m=t[f];a.textContent=m.dataset.sentence,o.textContent=m.dataset.word,s.textContent=m.dataset.position,c.textContent=m.dataset.palm,l.textContent=m.dataset.movement,u.style.width=`${(f+1)/t.length*100}%`,d.textContent=`第 ${f+1} / ${t.length} 页`,i&&(i.textContent=`第 ${f+1} 页 / 共 ${t.length} 页`),e.currentTime=Number(m.dataset.time||0)};t.forEach((e,t)=>e.addEventListener(`click`,()=>p(t))),r.forEach(e=>e.addEventListener(`click`,()=>p(Number(e.dataset.bookPage)))),document.querySelector(`[data-book-prev]`)?.addEventListener(`click`,()=>p(f-1)),document.querySelector(`[data-book-next]`)?.addEventListener(`click`,()=>p(f+1)),document.querySelector(`[data-learn-prev]`)?.addEventListener(`click`,()=>p(f-1)),document.querySelector(`[data-learn-next]`)?.addEventListener(`click`,()=>p(f+1)),document.querySelector(`[data-learn-play]`)?.addEventListener(`click`,()=>{e.paused?e.play().catch(()=>{}):e.pause()}),document.querySelectorAll(`[data-learn-speed]`).forEach(t=>{t.addEventListener(`click`,()=>{e.playbackRate=Number(t.dataset.learnSpeed),document.querySelectorAll(`[data-learn-speed]`).forEach(e=>e.classList.toggle(`active`,e===t))})}),document.querySelector(`[data-learn-loop]`)?.addEventListener(`click`,t=>{e.loop=!e.loop,t.currentTarget.classList.toggle(`active`,e.loop),t.currentTarget.setAttribute(`aria-pressed`,String(e.loop))}),p(0)}function f(){document.querySelectorAll(`[data-demo-form]`).forEach(e=>{e.addEventListener(`submit`,t=>{t.preventDefault(),p(e.dataset.success||`信息已记录，我们会尽快与您联系。`),e.reset()})})}function p(e){let t=document.querySelector(`#site-toast`);t&&(t.textContent=e,t.classList.add(`show`),window.clearTimeout(p.timer),p.timer=window.setTimeout(()=>t.classList.remove(`show`),3200))}a(),o(),s(),c(),l(),u(),d(),f()})();
