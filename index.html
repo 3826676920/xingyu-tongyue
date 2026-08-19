@@ -3,150 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="星语童阅是面向3-8岁听障儿童的原创手语绘本品牌，以原创绘本、国家通用手语视频和数字伴读构成可购买、可订阅的产品体系。" />
-    <title>星语童阅｜原创手语绘本品牌</title>
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <meta name="description" content="星语童阅原创儿童绘本品牌，展示《玥玥的小手会说话》《超人康康》《鼓手冬冬》三本真实样书与数字试读。" />
+    <title>星语童阅｜把故事读到指尖</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <script type="module" crossorigin src="/assets/site-DgIYK2Es.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/site-aU7IPruC.css">
+    <link rel="stylesheet" href="./assets/site-aU7IPruC.css" />
+    <link rel="stylesheet" href="./assets/site-custom.css" />
+    <script defer src="./assets/site-custom.js"></script>
   </head>
-  <body class="storybook-site">
+  <body>
     <div data-site-header></div>
-
     <main id="main-content" class="site-main">
-      <!-- V3：首页改为沉浸式绘本品牌首屏 -->
-      <section class="story-hero" aria-labelledby="home-title">
-        <img class="story-hero-scene" src="/assets/hero-storyworld-v2-D0OdvRuG.webp" alt="两名听障儿童在绘本花园里用手语交流并共同阅读" />
-        <div class="story-hero-shade" aria-hidden="true"></div>
-        <div class="container story-hero-content">
-          <div class="story-hero-copy">
-            <p class="story-kicker"><span aria-hidden="true">01</span> 原创手语绘本品牌</p>
-            <h1 id="home-title"><em>星语童阅</em><br />把故事读到指尖</h1>
-            <p>为3-8岁听障儿童创作真正适龄的原创绘本，并以2021版国家通用手语视频和点句伴读，让纸上的故事可以看见、跟学与表达。</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="./books.html"><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i>选一本绘本</a>
-              <a class="btn btn-paper" href="./learn.html"><i class="fa-solid fa-circle-play" aria-hidden="true"></i>体验点句伴读</a>
+      <section class="kid-hero">
+        <div class="container kid-hero-grid">
+          <div>
+            <span class="kid-kicker">✦ 指尖有光系列 · 三本真实样书</span>
+            <h1>每个孩子，<br />都有<em>自己的方式</em></h1>
+            <p>从玥玥会说话的小手，到康康感受音乐的指尖，再到冬冬敲响的小鼓。星语童阅用孩子愿意读的故事，讲出差异、理解和参与。</p>
+            <div class="kid-actions">
+              <a class="kid-btn primary" href="./books.html"><i class="fa-solid fa-book-open-reader"></i>看看三本绘本</a>
+              <a class="kid-btn paper" href="./learn.html?book=yueyue"><i class="fa-solid fa-circle-play"></i>免费试读5页</a>
             </div>
-            <dl class="story-proof" aria-label="产品特色">
-              <div><dt>01</dt><dd>原创故事与插画</dd></div>
-              <div><dt>02</dt><dd>手语专家审校</dd></div>
-              <div><dt>03</dt><dd>纸质与数字同步</dd></div>
-            </dl>
+          </div>
+          <div class="kid-hero-covers" aria-label="三本绘本封面">
+            <img src="./assets/books/yueyue/cover.jpg" alt="《玥玥的小手会说话》封面" />
+            <img src="./assets/books/kangkang/cover.jpg" alt="《超人康康》封面" />
+            <img src="./assets/books/dongdong/cover.jpg" alt="《鼓手冬冬》封面" />
           </div>
         </div>
-        <a class="hero-next" href="#new-books" aria-label="查看本季新书">
-          <span>本季新书</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
-        </a>
       </section>
 
-      <!-- V3：真实产品书架，替代抽象功能卡片 -->
-      <section id="new-books" class="section story-shelf-section" aria-labelledby="new-books-title">
+      <section class="kid-section" aria-labelledby="home-books-title">
         <div class="container">
-          <div class="editorial-heading">
-            <div>
-              <p class="story-kicker"><span aria-hidden="true">02</span> 本季书架</p>
-              <h2 id="new-books-title">先喜欢上故事，<br />再自然地学会表达</h2>
-            </div>
-            <div class="editorial-heading-note">
-              <p>每册围绕一个真实成长主题创作，按年龄和语言能力分级，并配套逐句国家通用手语视频。</p>
-              <a class="text-link" href="./books.html">浏览全部绘本 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
+          <div class="kid-section-head">
+            <div><span class="kid-kicker">本季书架</span><h2 id="home-books-title">已经完成的三本绘本</h2></div>
+            <p>网站与微信小程序使用同一套封面、年龄、主题和5页样书内容。当前书架只展示已经完成的作品。</p>
           </div>
-
-          <div class="story-shelf">
-            <article class="storybook-card card-rise">
-              <a class="storybook-cover" href="./learn.html">
-                <img src="/assets/book-hands-v2-DhJL8ZVe.webp" alt="《我的小手会说话》原创绘本封面插画" />
-                <span class="age-sticker">3-5岁</span>
-              </a>
-              <div class="storybook-info"><p>启蒙表达</p><h3>我的小手会说话</h3><span>¥39 · 含数字伴读</span></div>
+          <div class="real-book-grid">
+            <article class="real-book-card">
+              <a class="real-book-cover" href="./learn.html?book=yueyue"><img src="./assets/books/yueyue/cover.jpg" alt="《玥玥的小手会说话》封面" /><span>4—6岁</span></a>
+              <div class="real-book-body"><small>自我表达</small><h3>玥玥的小手会说话</h3><p>一双会说话的小手，让新朋友彼此看见。</p><div class="book-meta"><span>情感叙事</span><span>5页试读</span></div><div class="book-card-actions"><a class="kid-btn primary" href="./learn.html?book=yueyue">开始试读</a></div></div>
             </article>
-            <article class="storybook-card card-rise">
-              <a class="storybook-cover" href="./learn.html">
-                <img src="/assets/book-bear-v2-ttyVI8Bs.webp" alt="《小熊的手语好朋友》原创绘本封面插画" />
-                <span class="age-sticker mint">3-5岁</span>
-              </a>
-              <div class="storybook-info"><p>社交启蒙</p><h3>小熊的手语好朋友</h3><span>¥39 · 含数字伴读</span></div>
+            <article class="real-book-card">
+              <a class="real-book-cover" href="./learn.html?book=kangkang"><img src="./assets/books/kangkang/cover.jpg" alt="《超人康康》封面" /><span>6—8岁</span></a>
+              <div class="real-book-body"><small>感官体验</small><h3>超人康康</h3><p>用文字、手势和触觉认识声音与音乐。</p><div class="book-meta"><span>认知成长</span><span>5页试读</span></div><div class="book-card-actions"><a class="kid-btn primary" href="./learn.html?book=kangkang">开始试读</a></div></div>
             </article>
-            <article class="storybook-card featured-book card-rise">
-              <a class="storybook-cover" href="./learn.html">
-                <img src="/assets/book-promise-v2-CSgjEUxS.webp" alt="《森林里的手语约定》原创绘本封面插画" />
-                <span class="age-sticker violet">5-6岁</span>
-              </a>
-              <div class="storybook-info"><p>合作与规则</p><h3>森林里的手语约定</h3><span>¥49 · 含数字伴读</span></div>
+            <article class="real-book-card">
+              <a class="real-book-cover" href="./learn.html?book=dongdong"><img src="./assets/books/dongdong/cover.jpg" alt="《鼓手冬冬》封面" /><span>4—6岁</span></a>
+              <div class="real-book-body"><small>节奏与参与</small><h3>鼓手冬冬</h3><p>跟着震动找到节奏，也找到参与的快乐。</p><div class="book-meta"><span>情感成长</span><span>5页试读</span></div><div class="book-card-actions"><a class="kid-btn primary" href="./learn.html?book=dongdong">开始试读</a></div></div>
             </article>
-            <article class="storybook-card card-rise">
-              <a class="storybook-cover" href="./learn.html">
-                <img src="/assets/book-courage-v2-B4WTGmGM.webp" alt="《藏在指尖的小勇敢》原创绘本封面插画" />
-                <span class="age-sticker coral">6-8岁</span>
-              </a>
-              <div class="storybook-info"><p>情绪成长</p><h3>藏在指尖的小勇敢</h3><span>¥49 · 含数字伴读</span></div>
-            </article>
-            <article class="storybook-card card-rise">
-              <a class="storybook-cover" href="./learn.html">
-                <img src="/assets/book-stars-v2-1di3WZV1.webp" alt="《指尖星光伴我成长》原创绘本封面插画" />
-                <span class="age-sticker blue">6-8岁</span>
-              </a>
-              <div class="storybook-info"><p>科学启蒙</p><h3>指尖星光伴我成长</h3><span>¥49 · 含数字伴读</span></div>
-            </article>
-          </div>
-          <div class="shelf-line" aria-hidden="true"></div>
-        </div>
-      </section>
-
-      <!-- V3：产品能力用一段真实体验说明 -->
-      <section class="section reading-experience" aria-labelledby="experience-title">
-        <div class="container experience-layout">
-          <div class="experience-media card-rise">
-            <img src="/assets/learn-reference-D1E8NDyF.jpg" alt="点句学语页面中绘本画面与国家通用手语视频同步播放" />
-            <button class="experience-play" type="button" data-video-open data-video-title="星语童阅点句伴读体验" aria-label="播放点句伴读演示">
-              <i class="fa-solid fa-play" aria-hidden="true"></i>
-            </button>
-            <span class="scribble-note">点一句 · 看一句 · 跟一句</span>
-          </div>
-          <div class="experience-copy">
-            <p class="story-kicker"><span aria-hidden="true">03</span> 点句数字伴读</p>
-            <h2 id="experience-title">一本纸质绘本，<br />多一种读懂它的方法</h2>
-            <p>孩子点击句子即可观看对应手语，支持常速、慢速和单句循环。家长不必在零散视频中反复寻找，绘本、文字和手语始终对应。</p>
-            <ul class="check-list">
-              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span><strong>逐句同步</strong> 文字、画面与动作保持同一阅读节奏</span></li>
-              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span><strong>标准审校</strong> 依据2021版国家通用手语进行审核</span></li>
-              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span><strong>家庭可用</strong> 手机、平板和电脑均可直接伴读</span></li>
-            </ul>
-            <a class="btn btn-primary" href="./learn.html">进入伴读体验 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
           </div>
         </div>
       </section>
 
-      <!-- V3：简洁展示产品和收入关系，避免汇报式数据墙 -->
-      <section class="section product-story" aria-labelledby="product-story-title">
+      <section class="section product-story" aria-labelledby="business-title">
         <div class="container">
-          <div class="editorial-heading light">
-            <div>
-              <p class="story-kicker"><span aria-hidden="true">04</span> 产品与经营</p>
-              <h2 id="product-story-title">好内容被购买，<br />下一本书才会发生</h2>
-            </div>
-            <div class="editorial-heading-note">
-              <p>星语童阅以原创内容版权为核心，用实物绘本、家庭数字会员和机构内容授权支持持续创作。</p>
-              <a class="text-link" href="./public.html">查看市场与运营 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="product-chapters">
-            <article><span>纸质零售</span><h3>单册与主题套装</h3><p>从小批量试售开始，用真实订单验证选题、价格与复购。</p><strong>¥39-59 / 册</strong></article>
-            <article><span>家庭订阅</span><h3>完整数字伴读</h3><p>解锁绘本库、逐句视频、阅读记录与持续的新书更新。</p><strong>¥199-299 / 年</strong></article>
-            <article><span>机构授权</span><h3>内容账号与更新</h3><p>按账号席位与内容范围，为明确采购需求提供年度方案。</p><strong>¥3,000起 / 年</strong></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-sm studio-note" aria-labelledby="studio-title">
-        <div class="container studio-note-inner">
-          <div><p class="story-kicker"><span aria-hidden="true">05</span> 我们正在创作</p><h2 id="studio-title">从一册完整作品开始，建立孩子愿意反复打开的手语绘本系列。</h2></div>
-          <a class="btn btn-paper" href="./about.html">认识创作团队</a>
+          <div class="editorial-heading light"><div><p class="story-kicker"><span>02</span> 内容与经营</p><h2 id="business-title">先用好故事赢得选择，<br />再让创作持续下去</h2></div><div class="editorial-heading-note"><p>项目从市场调研、样书试读和价格测试开始，逐步验证单册、系列套装和数字伴读的真实购买意愿。</p><a class="text-link" href="./public.html">查看市场与运营 <i class="fa-solid fa-arrow-right"></i></a></div></div>
+          <div class="product-chapters"><article><span>第一步</span><h3>完成真实样书</h3><p>用三本完整作品证明故事开发、插画制作和系列化能力。</p><strong>3本已完成</strong></article><article><span>第二步</span><h3>开展市场验证</h3><p>通过家庭访谈、试读反馈和价格测试确定首批产品。</p><strong>先调研再生产</strong></article><article><span>第三步</span><h3>形成可持续收入</h3><p>用单册、套装与数字伴读支持后续内容持续更新。</p><strong>以真实订单验证</strong></article></div>
         </div>
       </section>
     </main>
-
     <div data-site-footer></div>
   </body>
 </html>

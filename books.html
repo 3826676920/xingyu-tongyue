@@ -3,201 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="星语童阅手语绘本库，提供3-8岁听障儿童原创分级绘本与2021版国家通用手语视频。" />
-    <title>手语绘本库｜星语童阅</title>
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <meta name="description" content="星语童阅绘本书架，展示《玥玥的小手会说话》《超人康康》《鼓手冬冬》三本已完成绘本。" />
+    <title>绘本书架｜星语童阅</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <script type="module" crossorigin src="/assets/site-DgIYK2Es.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/site-aU7IPruC.css">
+    <link rel="stylesheet" href="./assets/site-aU7IPruC.css" />
+    <link rel="stylesheet" href="./assets/site-custom.css" />
+    <script defer src="./assets/site-custom.js"></script>
   </head>
   <body>
     <div data-site-header></div>
     <main id="main-content" class="site-main">
-      <section class="page-hero subpage-hero" aria-labelledby="books-title">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="project-fullname">特殊教育视域下原创手语绘本创编及数字化服务平台（星语童阅）</p>
-            <h1 id="books-title">手语绘本库</h1>
-            <p class="hero-lead">面向3-8岁听障儿童的原创分级阅读资源，以儿童发展为依据，以2021版国家通用手语为标准，让每一本绘本都能看见、读懂、表达。</p>
-          </div>
-          <div class="hero-media book-cover-hero-media">
-            <img src="/assets/book-promise-v2-CSgjEUxS.webp" alt="《森林里的手语约定》原创手语绘本封面插画" />
-            <span class="media-badge">原创绘本 + 标准手语视频</span>
-          </div>
+      <section class="kid-hero">
+        <div class="container kid-hero-grid">
+          <div><span class="kid-kicker">指尖有光系列</span><h1>今天想读<br /><em>哪一本？</em></h1><p>这里仅展示目前已经完成的三本真实绘本。每一本都能进入5页样书试读，网站和微信小程序内容保持一致。</p></div>
+          <div class="kid-hero-covers"><img src="./assets/books/yueyue/cover.jpg" alt="《玥玥的小手会说话》封面" /><img src="./assets/books/kangkang/cover.jpg" alt="《超人康康》封面" /><img src="./assets/books/dongdong/cover.jpg" alt="《鼓手冬冬》封面" /></div>
         </div>
       </section>
-
-      <!-- 分类标签与五列绘本卡片 -->
-      <section class="section" aria-labelledby="library-title">
+      <section class="kid-section" aria-labelledby="library-title">
         <div class="container">
-          <div class="section-heading align-left">
-            <p class="eyebrow">原创分级资源</p>
-            <h2 id="library-title">精选手语绘本</h2>
-            <p data-book-count aria-live="polite">当前显示 5 本</p>
-          </div>
-          <div class="filter-bar" aria-label="绘本分类筛选">
-            <button class="filter-chip active" type="button" data-book-filter="all" aria-pressed="true">全部绘本</button>
-            <button class="filter-chip" type="button" data-book-filter="3-5" aria-pressed="false">启蒙级 3-5岁</button>
-            <button class="filter-chip" type="button" data-book-filter="5-6" aria-pressed="false">成长级 5-6岁</button>
-            <button class="filter-chip" type="button" data-book-filter="6-8" aria-pressed="false">进阶级 6-8岁</button>
-            <button class="filter-chip" type="button" data-book-filter="生活认知" aria-pressed="false">生活认知</button>
-            <button class="filter-chip" type="button" data-book-filter="情绪管理" aria-pressed="false">情绪管理</button>
-            <button class="filter-chip" type="button" data-book-filter="社交规则" aria-pressed="false">社交规则</button>
-            <button class="filter-chip" type="button" data-book-filter="科学启蒙" aria-pressed="false">科学启蒙</button>
-          </div>
-
-          <div class="book-grid">
-            <article class="card lift-card card-rise book-card" data-book-card data-age="3-5" data-topic="生活认知">
-              <div class="book-cover cover-1">
-                <img class="book-cover-art" src="/assets/book-hands-v2-DhJL8ZVe.webp" alt="《我的小手会说话》原创绘本封面插画" />
-                <span class="book-level">启蒙级 3-5岁</span>
-              </div>
-              <div class="book-body">
-                <h3>我的小手会说话</h3>
-                <p>认识双手，学习问候与自我表达。</p>
-                <span class="book-price">¥39 <small>含数字伴读</small></span>
-                <div class="book-actions">
-                  <a class="btn btn-ghost" href="./learn.html#reader">阅读绘本</a>
-                  <a class="btn btn-yellow" href="./learn.html">点句学语</a>
-                  <button class="btn-icon" type="button" data-video-open data-video-title="《我的小手会说话》标准手语视频" aria-label="观看《我的小手会说话》手语视频"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </article>
-            <article class="card lift-card card-rise book-card" data-book-card data-age="3-5" data-topic="社交规则">
-              <div class="book-cover cover-2">
-                <img class="book-cover-art" src="/assets/book-bear-v2-ttyVI8Bs.webp" alt="《小熊的手语好朋友》原创绘本封面插画" />
-                <span class="book-level">启蒙级 3-5岁</span>
-              </div>
-              <div class="book-body">
-                <h3>小熊的手语好朋友</h3>
-                <p>学会友好相处、邀请与感谢。</p>
-                <span class="book-price">¥39 <small>含数字伴读</small></span>
-                <div class="book-actions">
-                  <a class="btn btn-ghost" href="./learn.html#reader">阅读绘本</a>
-                  <a class="btn btn-yellow" href="./learn.html">点句学语</a>
-                  <button class="btn-icon" type="button" data-video-open data-video-title="《小熊的手语好朋友》标准手语视频" aria-label="观看《小熊的手语好朋友》手语视频"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </article>
-            <article class="card lift-card card-rise book-card" data-book-card data-age="5-6" data-topic="社交规则">
-              <div class="book-cover cover-3">
-                <img class="book-cover-art" src="/assets/book-promise-v2-CSgjEUxS.webp" alt="《森林里的手语约定》原创绘本封面插画" />
-                <span class="book-level">成长级 5-6岁</span>
-              </div>
-              <div class="book-body">
-                <h3>森林里的手语约定</h3>
-                <p>练习轮流、守信与合作表达。</p>
-                <span class="book-price">¥49 <small>含数字伴读</small></span>
-                <div class="book-actions">
-                  <a class="btn btn-ghost" href="./learn.html#reader">阅读绘本</a>
-                  <a class="btn btn-yellow" href="./learn.html">点句学语</a>
-                  <button class="btn-icon" type="button" data-video-open data-video-title="《森林里的手语约定》标准手语视频" aria-label="观看《森林里的手语约定》手语视频"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </article>
-            <article class="card lift-card card-rise book-card" data-book-card data-age="6-8" data-topic="情绪管理">
-              <div class="book-cover cover-4">
-                <img class="book-cover-art" src="/assets/book-courage-v2-B4WTGmGM.webp" alt="《藏在指尖的小勇敢》原创绘本封面插画" />
-                <span class="book-level">进阶级 6-8岁</span>
-              </div>
-              <div class="book-body">
-                <h3>藏在指尖的小勇敢</h3>
-                <p>识别紧张情绪，勇敢表达需要。</p>
-                <span class="book-price">¥49 <small>含数字伴读</small></span>
-                <div class="book-actions">
-                  <a class="btn btn-ghost" href="./learn.html#reader">阅读绘本</a>
-                  <a class="btn btn-yellow" href="./learn.html">点句学语</a>
-                  <button class="btn-icon" type="button" data-video-open data-video-title="《藏在指尖的小勇敢》标准手语视频" aria-label="观看《藏在指尖的小勇敢》手语视频"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </article>
-            <article class="card lift-card card-rise book-card" data-book-card data-age="6-8" data-topic="科学启蒙">
-              <div class="book-cover cover-5">
-                <img class="book-cover-art" src="/assets/book-stars-v2-1di3WZV1.webp" alt="《指尖星光伴我成长》原创绘本封面插画" />
-                <span class="book-level">进阶级 6-8岁</span>
-              </div>
-              <div class="book-body">
-                <h3>指尖星光伴我成长</h3>
-                <p>在观察与实践中建立探索意识。</p>
-                <span class="book-price">¥49 <small>含数字伴读</small></span>
-                <div class="book-actions">
-                  <a class="btn btn-ghost" href="./learn.html#reader">阅读绘本</a>
-                  <a class="btn btn-yellow" href="./learn.html">点句学语</a>
-                  <button class="btn-icon" type="button" data-video-open data-video-title="《指尖星光伴我成长》标准手语视频" aria-label="观看《指尖星光伴我成长》手语视频"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 试读与付费产品 -->
-      <section class="section section-band" aria-labelledby="access-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">购买方式</p>
-            <h2 id="access-title">先试读，再选择单册、套装或数字会员</h2>
-            <p>用有限试读降低首次决策门槛，完整内容通过产品销售与会员订阅持续更新。</p>
-          </div>
-          <div class="two-grid">
-            <article class="card lift-card card-rise access-panel">
-              <span class="icon-box coral"><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i></span>
-              <div>
-                <p class="eyebrow">新用户试读</p>
-                <h3>1册完整体验 + 精选章节开放</h3>
-                <p>体验故事、画面与手语视频的完整配合，再决定购买纸质绘本或开通会员。</p>
-                <a class="btn btn-ghost" href="./learn.html">开始免费试读</a>
-              </div>
-            </article>
-            <article class="card lift-card card-rise access-panel">
-              <span class="icon-box violet"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span>
-              <div>
-                <p class="eyebrow">家庭数字会员</p>
-                <h3>完整分级绘本库按年订阅</h3>
-                <p>解锁3-8岁完整分级、逐句手语伴读、学习记录和家庭陪读建议，持续获得新书更新。</p>
-                <a class="btn btn-accent" href="./public.html#revenue">查看价格规划</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 手语视频会员体验 -->
-      <section class="section-sm" aria-labelledby="video-resource-title">
-        <div class="container resource-banner card-rise">
-          <div>
-            <p class="eyebrow" style="color:#f2f0ff">数字会员功能体验</p>
-            <h2 id="video-resource-title">一句一视频，支持常速、慢速与单句循环</h2>
-            <p>先体验标准手语视频，开通会员后可使用完整绘本库、逐句伴读和学习记录。</p>
-          </div>
-          <button class="btn btn-accent" type="button" data-video-open data-video-title="标准化手语视频资源演示"><i class="fa-solid fa-circle-play" aria-hidden="true"></i>播放功能示例</button>
-        </div>
-      </section>
-
-      <!-- 绘本研发三栏 -->
-      <section class="section section-band" aria-labelledby="rd-title">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">研发保障</p>
-            <h2 id="rd-title">每一本绘本都经过三重专业验证</h2>
-          </div>
-          <div class="three-grid">
-            <article class="card lift-card card-rise info-card"><span class="icon-box"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span><h3>创编团队</h3><p>特教、学前教育与中文创意写作成员共同完成语言分级、故事脚本和视觉叙事。</p></article>
-            <article class="card lift-card card-rise info-card"><span class="icon-box yellow"><i class="fa-solid fa-hands" aria-hidden="true"></i></span><h3>手语标准</h3><p>持证手语专家依据2021版国家通用手语进行动作、表情、方位与节奏审校。</p></article>
-            <article class="card lift-card card-rise info-card"><span class="icon-box teal"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span><h3>教育价值</h3><p>服务特教早期语言干预，促进书面语发展、情绪表达、社会交往与融合教育。</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-sm" aria-labelledby="book-flow-title">
-        <div class="container">
-          <div class="section-heading"><p class="eyebrow">产品经营闭环</p><h2 id="book-flow-title">一本绘本从需求到复购的完整路径</h2></div>
-          <div class="flow-strip card-rise">
-            <div class="flow-step"><small>01</small><strong>原创手语绘本创编</strong></div>
-            <div class="flow-step"><small>02</small><strong>标准化手语视频录制</strong></div>
-            <div class="flow-step"><small>03</small><strong>点句数字化伴读</strong></div>
-            <div class="flow-step"><small>04</small><strong>纸质销售与会员订阅</strong></div>
-            <div class="flow-step"><small>05</small><strong>用户反馈与系列复购</strong></div>
+          <div class="kid-section-head"><div><span class="kid-kicker">真实样书</span><h2 id="library-title">三本已完成绘本</h2></div><p data-book-count aria-live="polite">当前显示 3 本</p></div>
+          <div class="filter-bar" aria-label="绘本分类筛选"><button class="filter-chip active" type="button" data-book-filter="all">全部绘本</button><button class="filter-chip" type="button" data-book-filter="4-6">4—6岁</button><button class="filter-chip" type="button" data-book-filter="6-8">6—8岁</button><button class="filter-chip" type="button" data-book-filter="自我表达">自我表达</button><button class="filter-chip" type="button" data-book-filter="感官体验">感官体验</button><button class="filter-chip" type="button" data-book-filter="节奏与参与">节奏与参与</button></div>
+          <div class="real-book-grid">
+            <article class="real-book-card" data-book-card data-age="4-6" data-topic="自我表达"><a class="real-book-cover" href="./learn.html?book=yueyue"><img src="./assets/books/yueyue/cover.jpg" alt="《玥玥的小手会说话》封面" /><span>4—6岁</span></a><div class="real-book-body"><small>自我表达 · 情感叙事</small><h3>玥玥的小手会说话</h3><p>四岁的玥玥第一次走进幼儿园。孩子们慢慢读懂了这双会说话的小手。</p><div class="book-meta"><span>理解沟通差异</span><span>建立同伴连接</span></div><div class="book-card-actions"><a class="kid-btn primary" href="./learn.html?book=yueyue">免费试读5页</a></div></div></article>
+            <article class="real-book-card" data-book-card data-age="6-8" data-topic="感官体验"><a class="real-book-cover" href="./learn.html?book=kangkang"><img src="./assets/books/kangkang/cover.jpg" alt="《超人康康》封面" /><span>6—8岁</span></a><div class="real-book-body"><small>感官体验 · 认知成长</small><h3>超人康康</h3><p>康康用文字、手势和小手感受震动，找到了认识声音和音乐的方式。</p><div class="book-meta"><span>多元感官</span><span>认识震动</span></div><div class="book-card-actions"><a class="kid-btn primary" href="./learn.html?book=kangkang">免费试读5页</a></div></div></article>
+            <article class="real-book-card" data-book-card data-age="4-6" data-topic="节奏与参与"><a class="real-book-cover" href="./learn.html?book=dongdong"><img src="./assets/books/dongdong/cover.jpg" alt="《鼓手冬冬》封面" /><span>4—6岁</span></a><div class="real-book-body"><small>节奏与参与 · 情感成长</small><h3>鼓手冬冬</h3><p>冬冬用手感受音箱的震动，拿起小鼓，和伙伴们一起登上舞台。</p><div class="book-meta"><span>找到参与方式</span><span>感受节奏</span></div><div class="book-card-actions"><a class="kid-btn primary" href="./learn.html?book=dongdong">免费试读5页</a></div></div></article>
           </div>
         </div>
       </section>
