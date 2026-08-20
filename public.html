@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="星语童阅从用户调研、最小产品试售到绘本零售、数字订阅与内容授权的可持续经营路径。" />
+    <meta name="description" content="星语童阅从家庭首购开始，验证绘本销售、系列复购、数字服务与机构内容授权的可持续经营路径。" />
     <title>市场与运营｜星语童阅</title>
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -11,192 +11,134 @@
     <link rel="stylesheet" href="./assets/site-custom.css" />
     <script defer src="./assets/site-custom.js"></script>
   </head>
-  <body class="market-page">
+  <body class="market-page market-v2">
     <div data-site-header></div>
     <main id="main-content" class="site-main">
-      <section class="market-hero" aria-labelledby="market-title">
-        <div class="container market-hero-grid">
-          <div class="market-hero-copy">
-            <span class="market-kicker"><i class="fa-solid fa-seedling" aria-hidden="true"></i> 从创意走向真实成交</span>
-            <p class="project-fullname">星语童阅——特殊儿童绘本创编与数字化阅读平台</p>
-            <h1 id="market-title">把一本好绘本，<em>做成可持续的好生意</em></h1>
-            <p class="market-lead">我们不先讲大规模，也不虚构销量。首期用“指尖有光”回答三个最实际的问题：谁愿意买、为什么复购、收入能否覆盖持续创编成本。</p>
-            <div class="market-actions">
-              <a class="xy-btn primary" href="#validation">看验证路径</a>
-              <a class="xy-btn paper" href="#model">看收入模型</a>
-            </div>
-            <div class="market-facts" aria-label="项目当前产品事实">
-              <span><strong>3</strong> 本接入5页试读</span>
-              <span><strong>15</strong> 本分龄书目</span>
-              <span><strong>1</strong> 条首期产品线</span>
-            </div>
+      <section class="mv2-hero" aria-labelledby="market-title">
+        <div class="container mv2-hero-grid">
+          <div class="mv2-hero-copy">
+            <span class="v2-kicker"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> 市场与运营</span>
+            <h1 id="market-title">一本绘本，怎样<em>持续赚钱？</em></h1>
+            <p>星语童阅从“指尖有光”开始：先用真实试读找到愿意购买的家庭，再用分龄新书形成复购，让每一笔收入支持下一本原创绘本。</p>
+            <div class="v2-actions"><a class="v2-btn primary" href="#customer">从购买者看起</a><a class="v2-btn ghost" href="#revenue">查看收入路径</a></div>
+            <dl class="mv2-facts" aria-label="当前产品基础">
+              <div><dt>3本</dt><dd>已接入5页试读</dd></div>
+              <div><dt>15本</dt><dd>分龄产品书目</dd></div>
+              <div><dt>3档</dt><dd>覆盖3—8岁</dd></div>
+            </dl>
           </div>
-
-          <div class="business-board" aria-label="星语童阅经营路径示意图">
-            <div class="board-top"><span><i class="fa-solid fa-chart-simple" aria-hidden="true"></i> 经营主线</span><b>验证中</b></div>
-            <div class="board-product">
-              <img src="./assets/xingya-mascot-v2.webp" alt="品牌陪读伙伴小语" />
-              <div>
-                <small>首期核心产品</small>
-                <h2>指尖有光</h2>
-                <p>分龄绘本＋数字伴读</p>
-              </div>
-              <div class="board-covers" aria-label="三本已接入试读的绘本">
+          <div class="mv2-hero-visual" aria-label="星语童阅从试读到复购的经营路径">
+            <div class="mv2-book-stage">
+              <span class="mv2-stage-label">首期产品线 · 指尖有光</span>
+              <div class="mv2-cover-row">
                 <img src="./assets/books/yueyue/cover.jpg" alt="《玥玥的小手会说话》封面" />
                 <img src="./assets/books/dongdong/cover.jpg" alt="《鼓手冬冬》封面" />
                 <img src="./assets/books/kangkang/cover.jpg" alt="《超人康康》封面" />
               </div>
+              <div class="mv2-shelf"></div>
             </div>
-            <ol class="board-funnel">
-              <li><span>01</span><div><b>试读获客</b><small>先让用户看懂产品价值</small></div><em>免费入口</em></li>
-              <li><span>02</span><div><b>单册与套装成交</b><small>验证价格和购买理由</small></div><em>首购</em></li>
-              <li><span>03</span><div><b>新书与数字服务</b><small>用持续更新带来复购</small></div><em>增长</em></li>
-              <li><span>04</span><div><b>机构与版权合作</b><small>复用原创内容资产</small></div><em>放大</em></li>
+            <ol class="mv2-model-path">
+              <li><span>01</span><div><strong>免费试读</strong><small>让用户先看懂价值</small></div></li>
+              <li><span>02</span><div><strong>纸书成交</strong><small>验证真实付款</small></div></li>
+              <li><span>03</span><div><strong>系列复购</strong><small>用新书带动增长</small></div></li>
             </ol>
+            <img class="mv2-mascot" src="./assets/xingya-mascot-v2.webp" alt="品牌伙伴小语" />
           </div>
         </div>
       </section>
 
-      <section class="market-gates" aria-label="商业验证四道关">
-        <div class="container gate-grid">
-          <article><span>第一关</span><strong>需求是真的</strong><p>目标家庭与专业使用者反复提到同一问题</p></article>
-          <article><span>第二关</span><strong>产品愿意用</strong><p>试读完成、功能理解和再次使用都有记录</p></article>
-          <article><span>第三关</span><strong>用户愿意买</strong><p>用真实付款验证价格，不用“有兴趣”代替订单</p></article>
-          <article><span>第四关</span><strong>经营能持续</strong><p>毛利能够支持下一本内容和下一轮获客</p></article>
-        </div>
-      </section>
+      <nav class="mv2-anchor-nav" aria-label="市场与运营页面章节">
+        <div class="container"><a href="#customer"><span>01</span>谁来购买</a><a href="#validation"><span>02</span>验证什么</a><a href="#revenue"><span>03</span>如何赚钱</a><a href="#operation"><span>04</span>怎样执行</a></div>
+      </nav>
 
-      <section class="market-section" aria-labelledby="customer-title">
+      <section id="customer" class="mv2-section" aria-labelledby="customer-title">
         <div class="container">
-          <div class="market-heading split-heading">
-            <div><span>01｜目标市场</span><h2 id="customer-title">不是笼统地“帮助儿童”，<br />而是找到明确的购买者</h2></div>
-            <p>阅读者、使用者和付款者可能不是同一个人。星语童阅先围绕家庭首购建立最短成交链，再拓展有真实采购需求的机构与内容合作方。</p>
+          <div class="v2-heading">
+            <span>01 · 谁来购买</span>
+            <h2 id="customer-title">先把第一笔钱从哪里来，说清楚</h2>
+            <p>孩子是阅读者，但家庭、机构和内容合作方才是付款者。首期经营以家庭首购为主，不一开始同时铺开所有渠道。</p>
           </div>
-          <div class="customer-grid">
-            <article class="customer-card primary card-rise">
-              <div class="customer-icon"><i class="fa-solid fa-house-chimney-heart" aria-hidden="true"></i></div>
-              <span class="customer-role">首期重点 · B2C</span>
+          <div class="mv2-customer-grid">
+            <article class="mv2-customer-main card-rise">
+              <div class="mv2-customer-head"><span>首期核心</span><i class="fa-solid fa-house" aria-hidden="true"></i></div>
               <h3>目标家庭</h3>
-              <dl><div><dt>购买什么</dt><dd>单册、主题套装、数字伴读</dd></div><div><dt>为什么买</dt><dd>完整故事、清晰分龄、使用省心</dd></div><div><dt>怎样复购</dt><dd>同年龄段新书与成长主题升级</dd></div></dl>
+              <p>购买单册或主题套装，解决“内容零散、分龄不清、纸书与视频难对应”的使用麻烦。</p>
+              <dl><div><dt>首购理由</dt><dd>先试读，再决定是否购买</dd></div><div><dt>复购理由</dt><dd>同年龄段持续有新故事</dd></div><div><dt>需要验证</dt><dd>价格、购买频次与使用场景</dd></div></dl>
             </article>
-            <article class="customer-card card-rise">
-              <div class="customer-icon mint"><i class="fa-solid fa-building-user" aria-hidden="true"></i></div>
-              <span class="customer-role">第二路径 · B2B</span>
-              <h3>康复与特教机构</h3>
-              <dl><div><dt>采购什么</dt><dd>绘本套装、内容账号、使用支持</dd></div><div><dt>采购理由</dt><dd>内容连续、便于重复使用和管理</dd></div><div><dt>合作边界</dt><dd>服务明确采购需求，不干扰正常教学</dd></div></dl>
-            </article>
-            <article class="customer-card card-rise">
-              <div class="customer-icon violet"><i class="fa-solid fa-copyright" aria-hidden="true"></i></div>
-              <span class="customer-role">放大路径 · B2B2C</span>
-              <h3>出版与内容平台</h3>
-              <dl><div><dt>合作什么</dt><dd>联合出版、内容分发、版权许可</dd></div><div><dt>合作理由</dt><dd>共享原创内容，降低重复开发成本</dd></div><div><dt>收入来源</dt><dd>版权费、项目服务费或销售分成</dd></div></dl>
-            </article>
+            <div class="mv2-customer-side">
+              <article class="mv2-customer-small card-rise"><span class="v2-icon mint"><i class="fa-solid fa-building-user" aria-hidden="true"></i></span><div><small>第二阶段</small><h3>康复与特教机构</h3><p>采购绘本套装与内容账号，用于已有阅读和康复场景，不介入其正常教学管理。</p></div></article>
+              <article class="mv2-customer-small card-rise"><span class="v2-icon violet"><i class="fa-solid fa-copyright" aria-hidden="true"></i></span><div><small>放大阶段</small><h3>出版与内容平台</h3><p>通过联合出版、内容分发或版权许可，放大成熟内容的商业价值。</p></div></article>
+              <div class="mv2-order-note"><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i><p><strong>渠道顺序：</strong>家庭试售跑通后，再测试机构授权；成熟内容最后进入出版与平台合作。</p></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="validation" class="market-section research-lab" aria-labelledby="validation-title">
-        <div class="container research-layout">
-          <div class="research-copy">
-            <span class="section-number">02｜市场调研</span>
-            <h2 id="validation-title">调研不是为了凑数字，<br />而是为了做决定</h2>
-            <p>比赛现阶段最重要的是把验证方法讲清楚。每一项调研都对应一个产品或经营决定，未完成的结果明确标注“待验证”。</p>
-            <div class="research-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><p><strong>证据原则</strong><br />网站不展示未经核验的市场规模、销量、合作学校或用户效果；后续只用可追溯的问卷、访谈和试售记录更新。</p></div>
+      <section id="validation" class="mv2-section mv2-soft-section" aria-labelledby="validation-title">
+        <div class="container mv2-validation-layout">
+          <div>
+            <div class="v2-heading align-left">
+              <span>02 · 验证什么</span>
+              <h2 id="validation-title">调研不是包装，而是为了做决定</h2>
+              <p>创意组阶段不虚构市场规模和销量。每一份问卷、访谈和试售记录，都要对应一个明确的产品决定。</p>
+            </div>
+            <div class="mv2-insight-card card-rise">
+              <span>初步产品判断</span>
+              <ul><li>完整故事比孤立词汇更容易形成持续阅读。</li><li>纸书与数字伴读对应，能够减少寻找零散资源的时间。</li><li>分龄和连续更新，才有机会形成系列复购。</li></ul>
+              <small>以上为待继续验证的产品假设，不作为既成市场结论。</small>
+            </div>
           </div>
-          <div class="decision-board card-rise">
-            <div class="decision-head"><span>要做的经营决定</span><span>验证办法</span><span>当前状态</span></div>
-            <div class="decision-row"><strong>先做哪些年龄段和主题？</strong><p>家庭访谈＋阅读场景排序</p><em class="doing">持续补样</em></div>
-            <div class="decision-row"><strong>用户是否看懂产品差异？</strong><p>5页试读＋任务观察</p><em class="doing">原型可测</em></div>
-            <div class="decision-row"><strong>单册和套装定什么价格？</strong><p>价格梯度测试＋预售</p><em>待验证</em></div>
-            <div class="decision-row"><strong>哪个渠道能带来订单？</strong><p>分渠道记录咨询、成交与成本</p><em>待试售</em></div>
-            <div class="decision-row"><strong>用户为什么继续购买？</strong><p>30/60/90天复购与访谈</p><em>待跟踪</em></div>
-          </div>
+          <ol class="mv2-validation-list">
+            <li class="card-rise"><span>问题一</span><div><h3>用户真正缺什么？</h3><p>通过目标家庭与专业使用者访谈，决定首批主题和年龄段。</p></div><em class="progress">持续补样</em></li>
+            <li class="card-rise"><span>问题二</span><div><h3>试读是否看得懂、愿意继续？</h3><p>观察5页试读完成、停留、返回和再次使用情况。</p></div><em class="ready">原型可测</em></li>
+            <li class="card-rise"><span>问题三</span><div><h3>什么价格能产生真实付款？</h3><p>用单册、套装和预售梯度测试，不用“有兴趣”代替订单。</p></div><em>待试售</em></li>
+            <li class="card-rise"><span>问题四</span><div><h3>用户为什么再次购买？</h3><p>跟踪30/60/90天复购，判断新书、主题还是数字服务更有效。</p></div><em>待跟踪</em></li>
+          </ol>
         </div>
       </section>
 
-      <section class="market-section" aria-labelledby="compare-title">
+      <section id="revenue" class="mv2-section" aria-labelledby="revenue-title">
         <div class="container">
-          <div class="market-heading">
-            <span>03｜产品差异</span>
-            <h2 id="compare-title">把零散内容，变成可连续购买的阅读产品</h2>
-            <p>下面是产品形态的初步对照，用于明确差异化方向；最终仍需通过正式竞品采样与用户选择实验校准。</p>
+          <div class="v2-heading split">
+            <div><span>03 · 如何赚钱</span><h2 id="revenue-title">收入路径做减法，先卖最容易理解的产品</h2></div>
+            <p>首期不把所有商业模式同时启动。纸质绘本验证首购，系列新书验证复购，数字服务和机构授权只在用户需求明确后叠加。</p>
           </div>
-          <div class="compare-wrap card-rise" role="region" aria-label="产品形态对照表" tabindex="0">
-            <table class="compare-table">
-              <thead><tr><th>产品形态</th><th>完整故事</th><th>年龄分级</th><th>纸书与数字同步</th><th>持续系列更新</th><th>主要局限</th></tr></thead>
-              <tbody>
-                <tr><th>普通儿童绘本</th><td><i class="fa-solid fa-check" aria-label="有"></i></td><td>部分具备</td><td><i class="fa-solid fa-minus" aria-label="通常没有"></i></td><td>按出版系列</td><td>无障碍表达不是核心设计</td></tr>
-                <tr><th>手语词典／工具材料</th><td><i class="fa-solid fa-minus" aria-label="通常没有"></i></td><td>以词汇为主</td><td>部分具备</td><td>更新较慢</td><td>知识明确，但故事吸引力有限</td></tr>
-                <tr><th>短视频零散内容</th><td>片段化</td><td>不稳定</td><td><i class="fa-solid fa-minus" aria-label="通常没有"></i></td><td>频率较高</td><td>难形成连贯阅读与复购</td></tr>
-                <tr class="our-row"><th><span>星语童阅</span><small>产品设计目标</small></th><td><i class="fa-solid fa-check" aria-label="有"></i></td><td>3—8岁三级</td><td><i class="fa-solid fa-check" aria-label="有"></i></td><td>15本分龄书目</td><td>专业审校和真实付费仍待持续验证</td></tr>
-              </tbody>
-            </table>
+          <div class="mv2-revenue-grid">
+            <article class="mv2-revenue-card focus card-rise"><span>第一收入</span><i class="fa-solid fa-book" aria-hidden="true"></i><h3>纸质绘本与套装</h3><p>单册降低第一次购买门槛，主题套装提高客单价。</p><strong>先验证：有人愿意付钱</strong></article>
+            <article class="mv2-revenue-card card-rise"><span>增长收入</span><i class="fa-solid fa-layer-group" aria-hidden="true"></i><h3>系列新书复购</h3><p>围绕同一年龄段持续更新，让用户从一本走向多本。</p><strong>再验证：用户愿意回来</strong></article>
+            <article class="mv2-revenue-card future card-rise"><span>后续收入</span><i class="fa-solid fa-tablet-screen-button" aria-hidden="true"></i><h3>数字服务与机构授权</h3><p>按内容库、账号数量和服务深度形成会员或年度授权。</p><strong>最后验证：内容可以复用</strong></article>
+          </div>
+          <div class="mv2-economics card-rise">
+            <div class="mv2-equation"><span>订单收入</span><b>−</b><span>印制履约</span><b>−</b><span>渠道费用</span><b>−</b><span>内容分摊</span><b>=</b><strong>可再投入金额</strong></div>
+            <p>价格不在网站上编造。完成印制询价、试售和渠道核算后，再形成真实价格表与单册毛利表。</p>
           </div>
         </div>
       </section>
 
-      <section id="model" class="market-section model-section" aria-labelledby="model-title">
+      <section id="operation" class="mv2-section mv2-operation-section" aria-labelledby="operation-title">
         <div class="container">
-          <div class="market-heading split-heading light-heading">
-            <div><span>04｜收入模型</span><h2 id="model-title">同一套原创内容，<br />形成四层收入</h2></div>
-            <p>先验证最容易成交的纸质产品，再叠加数字服务和内容授权。价格不提前编造，必须由试售、印制成本、渠道费用和服务强度共同决定。</p>
+          <div class="v2-heading light">
+            <span>04 · 怎样执行</span>
+            <h2 id="operation-title">12个月，只完成四次关键过关</h2>
+            <p>每个阶段都有明确证据，达不到就调整，不用扩大书目掩盖问题。</p>
           </div>
-          <div class="revenue-stair">
-            <article class="revenue-step free card-rise"><span>入口</span><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i><h3>免费试读</h3><p>每本5页体验，帮助用户判断是否值得买。</p><strong>作用：降低决策门槛</strong></article>
-            <article class="revenue-step card-rise"><span>第一收入</span><i class="fa-solid fa-book" aria-hidden="true"></i><h3>单册与套装</h3><p>纸质绘本、电商组合与主题礼盒。</p><strong>作用：验证首购</strong></article>
-            <article class="revenue-step card-rise"><span>第二收入</span><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i><h3>家庭数字服务</h3><p>完整内容库、逐句伴读与成长记录。</p><strong>作用：验证续费</strong></article>
-            <article class="revenue-step card-rise"><span>第三收入</span><i class="fa-solid fa-id-card" aria-hidden="true"></i><h3>机构内容授权</h3><p>按内容范围、账号数量与服务深度定价。</p><strong>作用：提高客单价</strong></article>
-            <article class="revenue-step card-rise"><span>放大收入</span><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i><h3>出版与IP合作</h3><p>联合出版、内容分发与版权许可。</p><strong>作用：复用版权资产</strong></article>
-          </div>
-          <div class="economics-card card-rise">
-            <div><span class="economics-label">单笔经营账</span><h3>订单收入 <b>−</b> 印制履约 <b>−</b> 渠道费用 <b>−</b> 内容成本分摊 <b>=</b> 单笔贡献</h3></div>
-            <p>只有当单笔贡献和复购收入能够覆盖持续创编、专业审校、视频制作和平台维护，才进入下一阶段扩张。</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="market-section" aria-labelledby="operation-title">
-        <div class="container">
-          <div class="market-heading"><span>05｜运营节奏</span><h2 id="operation-title">12个月不追求“铺开”，只追求关键假设被验证</h2></div>
-          <div class="operation-track">
-            <article class="operation-stage card-rise"><small>01 · 0—2个月</small><h3>把样本找准</h3><p>完成家庭与专业使用者访谈，记录场景、购买者、现有替代方案和价格敏感点。</p><strong>过关信号：高频需求收敛</strong></article>
-            <article class="operation-stage card-rise"><small>02 · 3—5个月</small><h3>把产品做小</h3><p>选择1本主推绘本，完善试读、数字伴读和购买路径，准备小批量成本表。</p><strong>过关信号：用户能独立完成试读</strong></article>
-            <article class="operation-stage card-rise"><small>03 · 6—9个月</small><h3>把订单做实</h3><p>进行小规模预售或试售，逐单记录来源、成交原因、退款和服务成本。</p><strong>过关信号：出现真实付款与复购</strong></article>
-            <article class="operation-stage card-rise"><small>04 · 10—12个月</small><h3>把有效路径复制</h3><p>保留有效渠道，推出同年龄段第二本产品，再测试套装、会员或机构授权。</p><strong>过关信号：收入覆盖下一轮投入</strong></article>
+          <ol class="mv2-timeline">
+            <li class="card-rise"><span>0—2个月</span><div class="mv2-dot"></div><h3>需求收敛</h3><p>完成访谈，确定主推年龄段、主题和购买场景。</p><strong>证据：访谈记录与需求排序</strong></li>
+            <li class="card-rise"><span>3—5个月</span><div class="mv2-dot"></div><h3>产品可用</h3><p>选1本主推绘本，完成试读、伴读和购买路径。</p><strong>证据：试读观察与修改记录</strong></li>
+            <li class="card-rise"><span>6—9个月</span><div class="mv2-dot"></div><h3>产生订单</h3><p>小批量试售，逐单记录来源、成交与服务成本。</p><strong>证据：真实订单与成本表</strong></li>
+            <li class="card-rise"><span>10—12个月</span><div class="mv2-dot"></div><h3>形成复购</h3><p>推出同年龄段第二本，测试新书与主题套装。</p><strong>证据：复购率与渠道效率</strong></li>
+          </ol>
+          <div class="mv2-dashboard card-rise">
+            <div><span>比赛展示看什么</span><h3>不讲虚构规模，只展示验证进度</h3></div>
+            <dl><div><dt>产品</dt><dd>试读完成率</dd></div><div><dt>成交</dt><dd>试读转化率</dd></div><div><dt>经营</dt><dd>单笔贡献</dd></div><div><dt>增长</dt><dd>30/60/90天复购</dd></div></dl>
           </div>
         </div>
       </section>
 
-      <section class="market-section growth-section" aria-labelledby="growth-loop-title">
-        <div class="container growth-layout">
-          <div class="growth-copy">
-            <span class="section-number">06｜增长闭环</span>
-            <h2 id="growth-loop-title">不是靠一次曝光，<br />而是让每本新书推动下一次购买</h2>
-            <p>内容更新是增长核心。试读带来首购，使用反馈改善下一本绘本，新书和主题套装形成复购，再将成熟内容授权给更多合作渠道。</p>
-            <a class="xy-btn primary" href="./books.html">查看15本分龄书目</a>
-          </div>
-          <div class="growth-loop" aria-label="经营增长闭环">
-            <div class="loop-center"><img src="./assets/xingyu-logo.png" alt="" aria-hidden="true" /><strong>内容资产</strong><small>越做越厚</small></div>
-            <article class="loop-one"><span>01</span><strong>试读触达</strong></article>
-            <article class="loop-two"><span>02</span><strong>首购成交</strong></article>
-            <article class="loop-three"><span>03</span><strong>使用反馈</strong></article>
-            <article class="loop-four"><span>04</span><strong>新书复购</strong></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="market-section risk-section" aria-labelledby="risk-title">
-        <div class="container">
-          <div class="market-heading"><span>07｜风险控制</span><h2 id="risk-title">每扩一步，都设置一个停止或调整条件</h2></div>
-          <div class="risk-grid">
-            <article><i class="fa-solid fa-coins" aria-hidden="true"></i><div><h3>价格不被接受</h3><p>先缩小印量、调整组合或降低履约成本，不用虚假优惠制造销量。</p></div></article>
-            <article><i class="fa-solid fa-hands-asl-interpreting" aria-hidden="true"></i><div><h3>专业审校不足</h3><p>未通过相应专业人员和手语使用者审核的动作，不作为规范教学内容发布。</p></div></article>
-            <article><i class="fa-solid fa-arrow-trend-down" aria-hidden="true"></i><div><h3>复购没有形成</h3><p>回到主题、难度和使用场景重新访谈，不盲目增加书目和广告投入。</p></div></article>
-          </div>
-          <div class="market-cta">
-            <div><span>合作与验证</span><h2>我们需要的不是一句“项目很好”，而是一起把产品卖得出去</h2><p>欢迎出版社、内容平台、目标家庭和有明确采购需求的机构参与样书反馈、价格测试、试售与内容合作。</p></div>
-            <a class="xy-btn paper" href="mailto:3826676920@qq.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> 联系我们</a>
-          </div>
+      <section class="mv2-close-section">
+        <div class="container mv2-close-card">
+          <div><span>当前结论</span><h2>先证明一本能卖，再证明一个系列能持续</h2><p>这才是星语童阅从创意走向创业的核心逻辑。</p></div>
+          <div class="mv2-close-actions"><a class="v2-btn primary" href="./books.html">查看产品书架</a><a class="v2-btn ghost" href="mailto:3826676920@qq.com">联系合作</a></div>
         </div>
       </section>
     </main>
