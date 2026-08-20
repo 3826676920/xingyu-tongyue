@@ -9,6 +9,7 @@
 
 body { background: var(--kid-paper); color: var(--kid-ink); }
 .site-main { overflow: hidden; }
+.brand-logo-image { width: 46px; height: 46px; flex: 0 0 46px; object-fit: contain; }
 .kid-hero { background: linear-gradient(135deg, #fff0f3 0%, #fff8d9 50%, #e8fbf6 100%); padding: 76px 0 56px; }
 .kid-hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 54px; }
 .kid-kicker { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: #fff; color: #e85672; font-weight: 800; box-shadow: 0 8px 24px rgba(255,113,136,.12); }

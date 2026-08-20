@@ -21,7 +21,7 @@
       <header class="site-header">
         <nav class="site-nav container" aria-label="主导航">
           <a class="brand" href="./index.html" aria-label="星语童阅首页">
-            <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+            <img class="brand-logo-image" src="./assets/xingyu-logo.png" alt="" aria-hidden="true" />
             <span class="brand-lockup"><span class="brand-name">星语童阅</span><small>原创儿童绘本</small></span>
           </a>
           <div class="desktop-nav">${navLinks()}<a class="nav-cta" href="./books.html">选绘本 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
@@ -37,7 +37,7 @@
       <footer class="site-footer">
         <div class="footer-main container">
           <div class="footer-brand">
-            <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span><span class="brand-lockup"><span class="brand-name">星语童阅</span><small>指尖有光系列</small></span></a>
+            <a class="brand" href="./index.html"><img class="brand-logo-image" src="./assets/xingyu-logo.png" alt="" aria-hidden="true" /><span class="brand-lockup"><span class="brand-name">星语童阅</span><small>指尖有光系列</small></span></a>
             <p>从真实故事和真实样书出发，让孩子在阅读中看见自己的表达方式。</p>
           </div>
           <div class="footer-col"><h2>当前绘本</h2><a href="./learn.html?book=yueyue">玥玥的小手会说话</a><a href="./learn.html?book=kangkang">超人康康</a><a href="./learn.html?book=dongdong">鼓手冬冬</a></div>
