@@ -23,6 +23,13 @@
           <button class="reader-tab" type="button" data-book="kangkang">超人康康</button>
           <button class="reader-tab" type="button" data-book="dongdong">鼓手冬冬</button>
         </div>
+        <div class="reader-level-control" aria-label="选择阅读难度">
+          <strong>选择阅读难度</strong>
+          <div class="reader-level-buttons" role="group" aria-label="阅读难度">
+            <button class="reader-level active" type="button" data-level="starter" aria-pressed="true">🌱 启蒙</button>
+            <button class="reader-level" type="button" data-level="growth" aria-pressed="false">🌟 成长</button>
+          </div>
+        </div>
         <article class="reader-card" aria-live="polite">
           <div class="reader-picture"><img id="reader-image" alt="" /></div>
           <div class="reader-copy">
@@ -43,31 +50,31 @@
         yueyue: {
           title: "玥玥的小手会说话", age: "4—6岁", topic: "自我表达",
           pages: [
-            ["老师介绍玥玥", "老师向小朋友介绍，她的名字叫“玥玥”。", "./assets/books/yueyue/page-1.jpg"],
-            ["认真的小老师", "玥玥可真是个认真的“小老师”！老师再次朝她竖起大拇指。", "./assets/books/yueyue/page-2.jpg"],
-            ["小手说你好", "玥玥先用食指在身前从左向右划出一个大圈，然后竖起大拇指，轻轻点动一下。", "./assets/books/yueyue/page-3.jpg"],
-            ["大家都笑了", "小朋友们读懂了玥玥的表达，也用自己的小手回应她。这回玥玥笑了，小朋友也笑了。", "./assets/books/yueyue/page-4.jpg"],
-            ["好多话都能听懂", "以后的日子里，玥玥用她的小手说了好多话，而且她说的话，所有人都能听懂。", "./assets/books/yueyue/page-5.jpg"]
+            ["老师介绍玥玥", "老师向小朋友介绍，她的名字叫“玥玥”。", "老师向小朋友介绍，她的名字叫“玥玥”。", "./assets/books/yueyue/page-1.jpg"],
+            ["认真的小老师", "玥玥可真是个认真的“小老师”！", "玥玥可真是个认真的“小老师”！老师再次朝她竖起大拇指。", "./assets/books/yueyue/page-2.jpg"],
+            ["小手说你好", "玥玥竖起大拇指，轻轻点动一下。", "玥玥先用食指在身前从左向右划出一个大圈，然后竖起大拇指，轻轻点动一下。", "./assets/books/yueyue/page-3.jpg"],
+            ["大家都笑了", "这回玥玥笑了，小朋友也笑了。", "小朋友们读懂了玥玥的表达，也用自己的小手回应她。这回玥玥笑了，小朋友也笑了。", "./assets/books/yueyue/page-4.jpg"],
+            ["好多话都能听懂", "以后，玥玥用她的小手说了好多话。", "以后的日子里，玥玥用她的小手说了好多话，而且她说的话，所有人都能听懂。", "./assets/books/yueyue/page-5.jpg"]
           ]
         },
         kangkang: {
           title: "超人康康", age: "6—8岁", topic: "感官体验",
           pages: [
-            ["超人康康", "我叫康康，今年六岁了。妈妈常常叫我“超人康康”。", "./assets/books/kangkang/page-1.jpg"],
-            ["识字超人", "我很快认识了好多汉字，也记住了好多手势。妈妈直夸我是“识字超人”。", "./assets/books/kangkang/page-2.jpg"],
-            ["手也能感受声音", "我明白了，声音带来的震动，也能被我的手感受到。", "./assets/books/kangkang/page-3.jpg"],
-            ["摸一摸吉他", "我坐在爸爸的怀里，把手指贴在吉他上。轻轻的震动从指尖传过来。", "./assets/books/kangkang/page-4.jpg"],
-            ["我是超人康康", "我能用文字、手势和小手感受世界。当然了，毕竟我是“超人康康”！", "./assets/books/kangkang/page-5.jpg"]
+            ["超人康康", "我叫康康，今年六岁了。", "我叫康康，今年六岁了。妈妈常常叫我“超人康康”。", "./assets/books/kangkang/page-1.jpg"],
+            ["识字超人", "我认识了好多汉字，也记住了好多手势。", "我很快认识了好多汉字，也记住了好多手势。妈妈直夸我是“识字超人”。", "./assets/books/kangkang/page-2.jpg"],
+            ["手也能感受声音", "声音带来的震动，也能被我的手感受到。", "我明白了，声音带来的震动，也能被我的手感受到。", "./assets/books/kangkang/page-3.jpg"],
+            ["摸一摸吉他", "我把手指贴在吉他上。", "我坐在爸爸的怀里，把手指贴在吉他上。轻轻的震动从指尖传过来。", "./assets/books/kangkang/page-4.jpg"],
+            ["我是超人康康", "当然了，毕竟我是“超人康康”！", "我能用文字、手势和小手感受世界。当然了，毕竟我是“超人康康”！", "./assets/books/kangkang/page-5.jpg"]
           ]
         },
         dongdong: {
           title: "鼓手冬冬", age: "4—6岁", topic: "节奏与参与",
           pages: [
-            ["我是冬冬", "我叫冬冬，今年五岁，是春芽幼儿园大班的小朋友。", "./assets/books/dongdong/page-1.jpg"],
-            ["自己的方法", "有人用耳朵听，有人用眼睛看。我也可以用自己的方法认识世界。", "./assets/books/dongdong/page-2.jpg"],
-            ["奇妙的震动", "我把手放在大音箱上，指尖忽然传来一阵震动。这感觉，真奇妙！", "./assets/books/dongdong/page-3.jpg"],
-            ["一手音箱，一手小鼓", "我一只手摸着音箱，另一只手拍响小鼓。小鼓也在震动，快乐像一颗小太阳跳进心里。", "./assets/books/dongdong/page-4.jpg"],
-            ["歌声里有我的鼓点", "咚！咚！咚！歌声里有我的鼓点，也有我的快乐。", "./assets/books/dongdong/page-5.jpg"]
+            ["我是冬冬", "我叫冬冬，今年五岁。", "我叫冬冬，今年五岁，是春芽幼儿园大班的小朋友。", "./assets/books/dongdong/page-1.jpg"],
+            ["自己的方法", "我也可以用自己的方法认识世界。", "有人用耳朵听，有人用眼睛看。我也可以用自己的方法认识世界。", "./assets/books/dongdong/page-2.jpg"],
+            ["奇妙的震动", "我把手放在大音箱上，指尖传来一阵震动。", "我把手放在大音箱上，指尖忽然传来一阵震动。这感觉，真奇妙！", "./assets/books/dongdong/page-3.jpg"],
+            ["一手音箱，一手小鼓", "我一只手摸着音箱，另一只手拍响小鼓。", "我一只手摸着音箱，另一只手拍响小鼓。小鼓也在震动，快乐像一颗小太阳跳进心里。", "./assets/books/dongdong/page-4.jpg"],
+            ["歌声里有我的鼓点", "咚！咚！咚！歌声里有我的鼓点。", "咚！咚！咚！歌声里有我的鼓点，也有我的快乐。", "./assets/books/dongdong/page-5.jpg"]
           ]
         }
       };
@@ -75,6 +82,7 @@
       const requested = new URLSearchParams(location.search).get("book");
       let currentBook = picturebooks[requested] ? requested : "yueyue";
       let pageIndex = 0;
+      let currentLevel = "starter";
       const image = document.querySelector("#reader-image");
       const meta = document.querySelector("#reader-meta");
       const title = document.querySelector("#reader-title");
@@ -85,16 +93,21 @@
       function render() {
         const book = picturebooks[currentBook];
         const page = book.pages[pageIndex];
-        image.src = page[2];
+        image.src = page[3];
         image.alt = `《${book.title}》试读第${pageIndex + 1}页：${page[0]}`;
-        meta.textContent = `${book.title} · ${book.age} · ${book.topic}`;
+        meta.textContent = `${book.title} · ${book.age} · ${book.topic} · ${currentLevel === "starter" ? "启蒙版" : "成长版"}`;
         title.textContent = page[0];
-        text.textContent = page[1];
+        text.textContent = page[currentLevel === "starter" ? 1 : 2];
         count.textContent = `第 ${pageIndex + 1} / ${book.pages.length} 页`;
         progress.style.width = `${((pageIndex + 1) / book.pages.length) * 100}%`;
         document.querySelector("#reader-prev").disabled = pageIndex === 0;
         document.querySelector("#reader-next").textContent = pageIndex === book.pages.length - 1 ? "回到第一页 ↻" : "下一页 →";
         document.querySelectorAll(".reader-tab").forEach((tab) => tab.classList.toggle("active", tab.dataset.book === currentBook));
+        document.querySelectorAll(".reader-level").forEach((button) => {
+          const active = button.dataset.level === currentLevel;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
         document.title = `${book.title}试读｜星语童阅`;
       }
 
@@ -102,6 +115,10 @@
         currentBook = tab.dataset.book;
         pageIndex = 0;
         history.replaceState(null, "", `?book=${currentBook}`);
+        render();
+      }));
+      document.querySelectorAll(".reader-level").forEach((button) => button.addEventListener("click", () => {
+        currentLevel = button.dataset.level;
         render();
       }));
       document.querySelector("#reader-prev").addEventListener("click", () => { if (pageIndex > 0) pageIndex -= 1; render(); });
